@@ -1,5 +1,3 @@
-
-
 <center><b>nestjs-stripe</b></center>
 
 # About
@@ -20,15 +18,14 @@ import { Module } from '@nestjs/common';
 import { StripeModule } from '@sjnprjl/nestjs-stripe';
 @Module({
   imports: [
-      // ...
+    // ...
     StripeModule.forRoot({
-      apiKey:
-        'your-secret-key',
+      apiKey: 'your-secret-key',
       apiVersion: '2022-08-01',
     }),
-      // ...
+    // ...
   ],
-// ...
+  // ...
 })
 export class AppModule {}
 ```
@@ -45,10 +42,14 @@ import Stripe from 'stripe';
 export class AppService {
   constructor(@Inject(STRIPE_TOKEN) private stripeClient: Stripe) {}
 }
-
 ```
 
 # Contributing
 
-I am just too lazy to fill this `README` with full of wonderful informations.  I therefore, request **you** to fill this markdown for me please 🥲.
+I am just too lazy to fill this `README` with full of wonderful informations. I therefore, request **you** to fill this markdown for me please 🥲.
 
+# License
+
+Distributed under the `MIT License`.
+
+Copyright @ 2022 Sujan Parajuli

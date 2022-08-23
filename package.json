@@ -4,7 +4,7 @@
   "description": "A stripe nest integration module where stripe client can be inject to the injectables.",
   "author": "sjnprjl",
   "private": false,
-  "license": "UNLICENSED",
+  "license": "MIT",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "files": [
