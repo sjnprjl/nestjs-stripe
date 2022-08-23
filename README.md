@@ -1,9 +1,5 @@
 <center><b>nestjs-stripe</b></center>
 
-# About
-
-`@sjnprjl/nestjs-stripe` package / module is same as [nestjs-stripe](https://github.com/dhaspden/nestjs-stripe) created by [dhaspden](https://github.com/dhaspden). A great guy BTW I also tried to create the same, taking inspiration from him, ofc. The only difference, however, is that this `fork`(you can say) supports recent version of [nestjs](https://github.com/nestjs/nest).
-
 # Installation
 
 ```sh
@@ -21,7 +17,9 @@ import { StripeModule } from '@sjnprjl/nestjs-stripe';
     // ...
     StripeModule.forRoot({
       apiKey: 'your-secret-key',
-      apiVersion: '2022-08-01',
+      options: {
+        apiVersion: '2022-08-01',
+      },
     }),
     // ...
   ],
@@ -46,7 +44,7 @@ export class AppService {
 
 # Contributing
 
-I am just too lazy to fill this `README` with full of wonderful informations. I therefore, request **you** to fill this markdown for me please 🥲.
+I am sure there are many things that this package must include. So, feel free to contribute to this repo for I am not so good coder.
 
 # License
 
