@@ -1,6 +1,6 @@
 {
   "name": "@sjnprjl/nestjs-stripe",
-  "version": "0.0.3",
+  "version": "1.0.0",
   "description": "A stripe nest integration module where stripe client can be inject to the injectables.",
   "author": "sjnprjl",
   "private": false,
