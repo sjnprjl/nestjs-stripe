@@ -1,9 +1,9 @@
 {
   "name": "nestjs-stripe",
   "version": "0.0.1",
-  "description": "",
-  "author": "",
-  "private": true,
+  "description": "A stripe nest integration module where stripe client can be inject to the injectables.",
+  "author": "sjnprjl",
+  "private": false,
   "license": "UNLICENSED",
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
