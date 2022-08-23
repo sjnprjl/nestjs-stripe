@@ -1,6 +1,6 @@
 import { DynamicModule, Module } from '@nestjs/common';
 
-import { createStripeProvider } from './providers/createStriveProviders';
+import { createStripeProvider } from './providers/createStripeProviders';
 import {
   ASYNC_OPTIONS_TYPE,
   ConfigurableModuleClass,
