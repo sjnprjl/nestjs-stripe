@@ -3,13 +3,19 @@ import { STRIPE_TOKEN } from '../constants';
 import Stripe from 'stripe';
 
 import { createStripeProvider } from './createStripeProviders';
+import { StripeOptions } from 'src/interface/stripe-options.interface';
 
 describe('stripeProvider', () => {
   const apiKey = 'test key';
   let provider: Provider<Stripe>;
 
   beforeEach(() => {
-    provider = createStripeProvider({ apiKey, apiVersion: '2022-08-01' });
+    provider = createStripeProvider({
+      apiKey,
+      config: {
+        apiVersion: '2022-08-01',
+      },
+    } as StripeOptions);
   });
 
   describe('when invoke', () => {

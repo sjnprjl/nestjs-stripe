@@ -9,7 +9,12 @@ describe('StripeModule', () => {
   describe('forRoot', () => {
     it('should provide the stripe client instance', async () => {
       const module = await Test.createTestingModule({
-        imports: [StripeModule.forRoot({ apiKey, apiVersion: '2022-08-01' })],
+        imports: [
+          StripeModule.forRoot({
+            apiKey,
+            config: { apiVersion: '2022-08-01' },
+          }),
+        ],
       }).compile();
       const stripeClientInstance = module.get<Stripe>(STRIPE_TOKEN);
 
@@ -23,7 +28,10 @@ describe('StripeModule', () => {
         const module = await Test.createTestingModule({
           imports: [
             StripeModule.forRootAsync({
-              useFactory: () => ({ apiKey, apiVersion: '2022-08-01' }),
+              useFactory: () => ({
+                apiKey,
+                config: { apiVersion: '2022-08-01' },
+              }),
             }),
           ],
         }).compile();
