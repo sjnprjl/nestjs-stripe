@@ -5,6 +5,10 @@
   "author": "sjnprjl",
   "private": false,
   "license": "MIT",
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/sjnprjl/nestjs-stripe"
+  },
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
   "files": [
