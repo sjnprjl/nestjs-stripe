@@ -7,20 +7,24 @@ import {
   OPTIONS_TYPE,
 } from './stripe.module-definition';
 
-@Module({
-  providers: [],
-})
+@Module({})
 export class StripeModule extends ConfigurableModuleClass {
   static forRoot(options: typeof OPTIONS_TYPE): DynamicModule {
+    const { providers, ...rest } = super.forRoot(options);
+    const provider = createStripeProvider(options);
     return {
-      providers: [createStripeProvider(options)],
-      ...super.forRoot(options),
+      providers: [provider, ...providers],
+      exports: [provider],
+      ...rest,
     };
   }
   static forRootAsync(options: typeof ASYNC_OPTIONS_TYPE): DynamicModule {
+    const { providers, ...rest } = super.forRootAsync(options);
+    const provider = createStripeProvider(options);
     return {
-      providers: [createStripeProvider(options)],
-      ...super.forRootAsync(options),
+      providers: [provider, ...providers],
+      exports: [provider],
+      ...rest,
     };
   }
 }
