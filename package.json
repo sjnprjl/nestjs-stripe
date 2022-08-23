@@ -1,6 +1,6 @@
 {
   "name": "@sjnprjl/nestjs-stripe",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A stripe nest integration module where stripe client can be inject to the injectables.",
   "author": "sjnprjl",
   "private": false,
@@ -9,6 +9,12 @@
   "typings": "./dist/index.d.ts",
   "files": [
     "dist"
+  ],
+  "keywords": [
+    "nestjs",
+    "stripe",
+    "module",
+    "payment"
   ],
   "scripts": {
     "prebuild": "rimraf dist",
