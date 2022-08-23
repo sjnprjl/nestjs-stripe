@@ -6,6 +6,12 @@
 npm install @sjnprjl/nestjs-stripe
 ```
 
+Install `stripe`.
+
+```sh
+npm install stripe
+```
+
 # Example
 
 ```ts
