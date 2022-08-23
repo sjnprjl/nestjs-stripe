@@ -4,12 +4,12 @@
 
 # About
 
-`nestjs-stripe` package / module is same as [nestjs-stripe](https://github.com/dhaspden/nestjs-stripe) created by [dhaspden](https://github.com/dhaspden). A great guy BTW I also tried to create the same, taking inspiration from him, ofc. The only difference, however, is that this `fork`(you can say) supports recent version of [nestjs](https://github.com/nestjs/nest).
+`@sjnprjl/nestjs-stripe` package / module is same as [nestjs-stripe](https://github.com/dhaspden/nestjs-stripe) created by [dhaspden](https://github.com/dhaspden). A great guy BTW I also tried to create the same, taking inspiration from him, ofc. The only difference, however, is that this `fork`(you can say) supports recent version of [nestjs](https://github.com/nestjs/nest).
 
 # Installation
 
 ```sh
-npm install nestjs-stripe
+npm install @sjnprjl/nestjs-stripe
 ```
 
 # Example
@@ -17,6 +17,7 @@ npm install nestjs-stripe
 ```ts
 // app.module.ts
 import { Module } from '@nestjs/common';
+import { StripeModule } from '@sjnprjl/nestjs-stripe';
 @Module({
   imports: [
       // ...
@@ -37,7 +38,7 @@ Now you can inject the stripe client into your `services` .
 ```ts
 // app.service.ts
 import { Inject, Injectable } from '@nestjs/common';
-import { STRIPE_TOKEN } from 'nestjs-stripe'; // provider token
+import { STRIPE_TOKEN } from '@sjnprjl/nestjs-stripe'; // provider token
 import Stripe from 'stripe';
 
 @Injectable()
