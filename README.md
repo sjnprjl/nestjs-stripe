@@ -23,8 +23,8 @@ import { StripeModule } from '@sjnprjl/nestjs-stripe';
     // ...
     StripeModule.forRoot({
       apiKey: 'your-secret-key',
-      options: {
-        apiVersion: '2022-08-01',
+      config: {
+        apiVersion: '2022-11-15',
       },
     }),
     // ...
