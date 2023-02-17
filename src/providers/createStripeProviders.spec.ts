@@ -13,7 +13,7 @@ describe('stripeProvider', () => {
     provider = createStripeProvider({
       apiKey,
       config: {
-        apiVersion: '2022-08-01',
+        apiVersion: '2022-11-15',
       },
     } as StripeOptions);
   });
